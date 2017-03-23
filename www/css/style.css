@@ -1,0 +1,273 @@
+
+
+/*PRESETS*/
+*{
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+	font-family: "Arial";
+	color: white;
+	text-decoration: none;
+}
+.container{
+	box-sizing: border-box;
+	display: block;
+	margin: auto;
+	padding: 0px 15px;
+	width: 1170px;
+	max-width: 100%;
+}
+
+body{
+	padding-bottom: 40px;
+	background: #ff7023;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.conteudo_central{
+		background: #ff7023;
+
+}
+
+#conteudo{
+	background: #ff7023;
+}
+
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+		transform: translateY(-40px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+/*CABECALHO*/
+#cabecalho{
+	background: white;
+}
+#cabecalho::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#cabecalho nav{
+	float: right;
+}
+#logo{
+	float: left;
+}
+#logo a{
+	display: block;
+	color: white;
+	height: 60px;
+	line-height: 60px;
+}
+
+nav ul li a{
+	font-size: 14px;
+	display: block;
+	color: white;
+	height: 60px;
+	line-height: 60px;
+	padding: 0px 20px;
+}
+nav ul li{
+	display: inline-block;
+}
+
+/* Sobre escrita da classe .navbar padrão do bootstrap */
+.navbar{
+  min-height: 8vh;
+  margin-bottom: 0px;
+  color: white;
+}
+
+
+.navbar-brand {
+  padding: 0px;
+  color: white;
+}
+.navbar-brand>img {
+  height: 60px;
+  width: 60px;
+  padding: 0px;
+}
+
+/*---------------- Estilos Carrossel -------------*/
+/* Classe base para o carrossel. Define 92% da tela porque a navbar ocupa 8%*/
+.carousel {
+  height: 60vh;
+  margin-bottom: 40px;
+}
+@media(min-width: 768px){
+	.carousel {
+		height: 92vh;
+	}
+}
+
+/* Vamos utilizar a mesma altura do item superior */
+.carousel-inner{
+  height: inherit;
+}
+
+.carousel .item {
+  height: inherit;
+}
+/* Imagem com mesmo tamanho que item superior e ocupando no minimo 100% da largura da tela */
+.carousel-inner > .item > img {
+  min-width: 100%;
+  height: inherit;
+}
+
+#carrossel .carousel-inner h1 {
+	color: white;
+	font-size: 24px;
+}
+
+
+#background_icones{
+	background-color: #ff7023;
+}
+
+#conteudo_icones{
+	padding-top: 40px; 
+	padding-bottom: 40px;
+}
+
+.titulo_secao{
+	padding-bottom: 40px;
+}
+#conteudo_imagens{
+	padding-bottom: 40 px;
+}
+
+
+/*CONTEUDO*/
+#conteudo{
+	padding: 30px 0px;
+}
+form label{
+	color: white;
+}
+form {
+	padding: 30px;
+	max-width: 400px;
+	margin: auto;
+	box-shadow: 0px 0px 52px 0px rgba(0,0,0,0.2);
+	animation: fadeIn 1.5s cubic-bezier(0.19,1,0.22,1);
+}
+form::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+form h3{
+	text-align: center;
+	margin-bottom: 20px;
+	color: white;
+}
+form .grupo{
+	margin-bottom: 20px;
+}
+form .grupo > *{
+	display: block;
+}
+form .grupo label{
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 2px;
+	color: rgba(255,255,255,0.6);
+}
+form .grupo input, form .grupo select{
+	border: none;
+	box-sizing: border-box;
+	font-weight: bold;
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	background: rgba(0,0,0,0.2);
+	color: rgba(255,255,255,0.9);
+    padding: 18px 10px;
+    border-bottom: solid 3px rgba(255,255,255,0.2);
+    transition: all 0.4s cubic-bezier(0.19,1,0.22,1);
+}
+
+form .grupo input + label,
+form .grupo input ~ label{
+	color: white;
+}
+
+form .grupo input:focus{
+	border-color: white;
+}
+form .grupo.erro input{
+	border-bottom-color: red;
+}
+form .grupo.valido input{
+	border-bottom-color: #88bd64;
+}
+
+.form{
+	width: 360px;
+	height: auto;
+	float: left;
+	margin-top: 10px;
+	margin-left: 150px;
+}
+
+.btn{
+	cursor: pointer;
+	font-weight: bold;
+	display: block;
+	height: 50px;
+	padding: 10px 20px;
+	border-radius: 25px;
+	border: none;
+	font-weight: bold;
+	font-size: 30px;
+	color : white;
+	background: #61ff00;
+	opacity: 0.8;
+	transition: all 1s cubic-bezier(0.19,1,0.22,1);
+}
+.btn:hover{
+	opacity: 1;
+	/*transform: translateY(-2px);*/
+}
+form > .btn{
+	width: 100%;
+	height: 60px;
+	border-radius: 30px;
+}
+
+
+#banner-home{
+
+	float: left;
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+
+/*RODAPE*/
+#rodape{
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	bottom: 0px;
+	background: #e58f49;
+}
+#rodape p{
+	text-align: center;
+	line-height: 40px;
+	color: white;
+}
+
+.ui-datepicker{
+	background: white;
+}
+
