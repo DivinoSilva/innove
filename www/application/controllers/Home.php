@@ -49,6 +49,11 @@ class Home extends CI_Controller {
         $this->load->view('ebook');
     }
     
+    
+        public function chamada() {
+        $this->load->view('chamada');
+    }
+    
     private function email($email){
         $var =  explode("@", $email);
         $var = explode(".", $var[1]);

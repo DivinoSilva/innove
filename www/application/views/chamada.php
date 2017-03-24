@@ -65,7 +65,6 @@
             <!-- DO NOT MODIFY -->
             <!-- End Facebook Pixel Code -->
         </head>
-        <script>fbq('track', 'CompleteRegistration');</script>
 
 
 
@@ -114,40 +113,43 @@
     <div class="container conteudo" id="conteudo_imagens">
         <div class="row text-center">
             <!-- Primeiro Item -->
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+            <div class="col-xs-12 col-sm-6 col-md6 col-lg-3 ">
                 <span class="fa fa-mobile fa-5x"> </span>
                 <h2>Canvas</h2>
                 <p>Guia pratico</p>
-                <p><a class="btn btn-success" href="/upload/EBOOK_CANVAS.pdf" target="_blank" >Download &raquo;</a></p>
             </div>
 
             <!-- Segundo item -->
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 ">
                 <span class="fa fa-hand-spock-o fa-5x"> </span>
                 <h2>Easy APP</h2>
                 <p>Fábrica de aplicativos</p>
-                <p><a class="btn btn-primary" href="/upload/EBOOK_APP.pdf" target="_blank" >Download &raquo;</a></p>
             </div>
 
             <!-- Terceiro item -->
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 ">
                 <span class="fa fa-book fa-5x"> </span>
                 <h2>Como criar títulos</h2>
                 <p>Conteudos memoráveis</p>
-                <p><a class="btn btn-danger" href="/upload/EBOOK_Conteudos-memoraveis.pdf" target="_blank">Download &raquo;</a></p>
-            </div>
-            
-            <!-- Primeiro Item -->
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
-                <span class="fa fa-line-chart fa-5x"> </span>
-                <h2>Growth Hacking</h2>
-                <p>Infográfico</p>
-                <p><a class="btn btn-success" href="/upload/INFO NOVO.jpg" target="_blank" >Download &raquo;</a></p>
             </div>
 
-        </div>
-    </div> <!-- fim #conteudo_imagens -->
+            <!-- Quarto Item -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 ">
+              <span class="fa fa-line-chart fa-5x"> </span>
+              <h2>Growth Hacking</h2>
+              <p>Infográfico</p>
+          </div>
 
+
+
+
+      
+
+        </div> <!-- fim #conteudo_imagens -->
+        <p><a class="btn btn-default" href="/home" >Eu quero evoluir!! Me dê meus E-Books</a></p>
+        <p><a class="btn btn-default" href="/home/principal" >Não quero evoluir, me leve para o site</a></p>
+
+    </div> <!-- fim #conteudo_imagens -->	
 
 
 
@@ -163,9 +165,9 @@
     <!-- SCRIPTS -->
     <script type="text/javascript" src="/js/pickaday.js"></script>
     <script>
-$(".datepicker").datepicker({
-    dateFormat: "dd/mm/yy"
-});
+                    $(".datepicker").datepicker({
+                        dateFormat: "dd/mm/yy"
+                    });
     </script>
 
     <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>

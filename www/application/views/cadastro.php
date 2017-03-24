@@ -94,26 +94,18 @@
 
             <section class="conteudo-central">
                 <div id="banner-home">
-                    <article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <figure><img src="./img/post_face_01.jpg" alt="Banner principal"></figure>
                     </article>
                 </div>
 
-                <article class="form">
+                <article class="form" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                     <div class="container">
-                        <form action="/" method="post">
+                        <form action="/home/ebook" method="post">
 
                             <?php if ($mensagem): ?>
                                 <h4><?php echo $mensagem; ?> </h4>
                             <?php endif; ?>
-                                
-                            <?php if ($this->session->userdata("ativo") == "ebook"): ?>
-                                    <script>
-                                        fbq('track', 'Lead');
-                                        alert('Obrigado');
-                                    </script> 
-                                <?php endif ?>     
-
                             <h3>Quer ser um Campeão?</h3>
                             <h3>Baixe Aqui o seu Ebook!</h3>
                             <div class="grupo">

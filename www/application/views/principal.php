@@ -55,21 +55,26 @@
                     s.parentNode.insertBefore(t, s)
                 }(window,
                         document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', '1006502336148869'); // Insert your pixel ID here.
+                fbq('init', '1892683924354121'); // Insert your pixel ID here.
                 fbq('track', 'PageView');
             </script>
+            <noscript><img height="1" width="1" style="display:none"
+                           src="https://www.facebook.com/tr?id=1892683924354121&ev=PageView&noscript=1"
+                           /></noscript>
+            <!-- DO NOT MODIFY -->
+            <!-- End Facebook Pixel Code -->
             <noscript><img height="1" width="1" style="display:none"
                            src="https://www.facebook.com/tr?id=1006502336148869&ev=PageView&noscript=1"
                            /></noscript>
             <!-- DO NOT MODIFY -->
             <!-- End Facebook Pixel Code -->
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
 
             <nav class="navbar navbar-default navbar-static-top" id="nav_wrapper">
                 <div class="container">
@@ -89,8 +94,7 @@
                     <!-- Itens da navbar -->
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="/home/principal">Home</a></li>
-                            <li><a href="/home">Cadastro</a></li>
+                            <li class="active"><a href="/home/principal">HOME</a></li>
                             <li><a href="<?php echo ($this->session->userdata("ativo") == "ebook") ? "/home/ebook" : "/home"; ?>">E-Book</a></li>
 
                         </ul>
